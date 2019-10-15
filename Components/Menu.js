@@ -1,6 +1,6 @@
 import React from "react"
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import { firebase } from '../Config/firebase';
+import { firebase } from '../src/Config/firebase';
 
 class Menu extends React.Component {
     state = {

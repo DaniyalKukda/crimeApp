@@ -1,7 +1,8 @@
 import React from 'react'
 import { View, Image, TouchableOpacity, Text } from 'react-native'
 import { Entypo } from '@expo/vector-icons';
-import { signOut } from "../../Config/firebase"
+import { signOut } from "../../src/Config/firebase"
+
 function Title(props) {
     return (
         <View style={{ flexDirection: "row" }}>
