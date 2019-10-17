@@ -114,7 +114,6 @@ class Home extends React.Component {
   }
   sendNotifications = async () => {
     let { locationName, token } = this.state;
-    console.log("dk1")
     const message = {
       to: token,
       sound: 'default',
@@ -167,7 +166,11 @@ class Home extends React.Component {
             onPress: () => console.log('Cancel Pressed'),
             style: 'cancel',
           },
-          { text: 'NOW', onPress: () => console.log('OK Pressed') },
+          {
+            text: 'NOW', onPress: () => this.props.navigation.navigate("Crimeinfo",{
+              deviceName : data.deviceName
+            })
+          },
         ],
         { cancelable: false },
       );

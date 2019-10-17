@@ -17,6 +17,9 @@ const StackNavigator = createStackNavigator({
   },
   Allrobbed: {
     screen: Screens.Allrobbed
+  },
+  Crimeinfo: {
+    screen: Screens.Crimeinfo
   }
 }
 
